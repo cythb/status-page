@@ -8,9 +8,7 @@
   let loading = true;
   let { apiBaseUrl } = config["status-website"] || {};
   if (!apiBaseUrl) apiBaseUrl = "https://api.github.com";
-  const userContentBaseUrl = apiBaseUrl.includes("api.github.com")
-    ? `${config.githubUserContentBaseUrl || "https://raw.githubusercontent.com"}`
-    : apiBaseUrl;
+  const userContentBaseUrl = config.githubUserContentBaseUrl || "https://raw.githubusercontent.com";
   const owner = config.owner;
   const repo = config.repo;
   let summary = null;
