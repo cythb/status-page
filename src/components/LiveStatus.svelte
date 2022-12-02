@@ -11,9 +11,7 @@
   let { apiBaseUrl } = config["status-website"] || {};
   let sites = [];
   if (!apiBaseUrl) apiBaseUrl = "https://api.github.com";
-  const userContentBaseUrl = apiBaseUrl.includes("api.github.com")
-    ? `${config.githubUserContentBaseUrl || "https://raw.githubusercontent.com"}`
-    : apiBaseUrl;
+  const userContentBaseUrl = config.githubUserContentBaseUrl || "https://raw.githubusercontent.com";
   const graphsBaseUrl = `${userContentBaseUrl}/${owner}/${repo}/master/graphs`;
   let form = null;
 
