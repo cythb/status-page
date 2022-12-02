@@ -44,3 +44,4 @@ Currently, the `.upptimerc.yml` configuration file is required one directly abov
 <p align="center">
   <sub>An open source project by <a href="https://koj.co">Koj</a>. <br> <a href="https://koj.co">Furnish your home in style, for as low as CHF175/month →</a></sub>
 </p>
+  

@@ -11,7 +11,7 @@ export const createOctokit = () => {
     "localStorage" in window &&
     localStorage.getItem("personal-access-token")
   )
-    token = localStorage.getItem("personal-access-token");
+  token = localStorage.getItem("personal-access-token");
   return new Octokit({
     baseUrl,
     userAgent,
